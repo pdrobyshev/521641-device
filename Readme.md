@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Пётр Дробышев](https://up.htmlacademy.ru/htmlcss/19/user/521641).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев] (https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
