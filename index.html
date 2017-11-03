@@ -76,7 +76,28 @@
         </ul>
         <a href="#">Подробнее о нас</a>
       </section>
+
+      <section class="contacts">
+        <h3>Контакты</h3>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <!--Карта-->
+        <a class="button" href="#">Напишите нам</a>
+      </section>
     </main>
 
+    <section class="modal modal-contacts">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+
+      <form action="url" method="post">
+        <label for="name">Ваше имя:</label>
+        <p><input type="text" name="name" id="name"></p>
+        <label for="email">Ваш e-mail:</label>
+        <p><input type="text" name="email" id="email"></p>
+        <label for="letter">Текст письма:</label>
+        <p><textarea name="letter" id="letter"></textarea></p>
+        <button type="submit">Отправить</button>
+      </form>
+      <span class="modal-close">x</span>
+    </section>
   </body>
 </html>
