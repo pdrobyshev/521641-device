@@ -12,6 +12,7 @@
           <a href="index.html" class="logo">Device</a>
         </div>
         <form action="url" method="GET">
+          <label class="visually-hidden">Поиск</label>
           <p><input type="search"></p>
         </form>
         <ul class="user-navigation">
@@ -50,8 +51,31 @@
 
         <section class="filters">
           <h2>Фильтр:</h2>
-          <!--Здесь будет форма-->
-          <button type="submit">Показать</button>
+          <form action="url" method="post">
+            <label for="price">Стоимость</label>
+            <input type="range" name="price" id="price">
+            <fieldset>
+              <legend>Цвет</legend>
+              <input type="checkbox" name="black" id="black" checked>
+              <label for="black">Черный</label>
+              <input type="checkbox" name="white" id="white">
+              <label for="white">Белый</label>
+              <input type="checkbox" name="blue" id="blue" checked>
+              <label for="blue">Синий</label>
+              <input type="checkbox" name="red" id="red" checked>
+              <label for="red">Красный</label>
+              <input type="checkbox" name="pink" id="pink">
+              <label for="pink">Розовый</label>
+            </fieldset>
+            <fieldset>
+              <legend>Bluetooth</legend>
+              <input type="radio" name="bluetooth" id="bluetooth-yes" checked>
+              <label for="bluetooth-yes">Есть</label>
+              <input type="radio" name="bluetooth" id="bluetooth-no">
+              <label for="bluetooth-no">Нет</label>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
 
           <p><b>Сортировка:</b></p>
           <ul class="items-sorting-left">
