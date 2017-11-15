@@ -320,3 +320,50 @@ a {
   opacity: 0.3;
 }
 
+.page-title {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 47px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.breadcrumbs a {
+  display: block;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 36px;
+  color: #c7c7c7;
+}
+
+.pagination-list {
+  list-style: none;
+  font-size: 0;
+}
+
+.pagination-list li {
+  display: inline-block;
+  background-color: #ebebeb;
+  padding: 10px;
+}
+
+.pagination-list a {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #a4a4a4;
+}
+
+.pagination-item:first-child a,
+.pagination-item:last-child a,
+.pagination-item-current a{
+  color: #000;
+}
