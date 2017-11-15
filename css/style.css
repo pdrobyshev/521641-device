@@ -340,7 +340,16 @@ a {
   font-family: "Open Sans Light", Arial, sans-serif;
   font-size: 14px;
   line-height: 36px;
-  color: #c7c7c7;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.1;
 }
 
 .pagination-list {
