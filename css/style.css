@@ -34,7 +34,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -102,14 +102,16 @@ a {
 }
 
 .site-navigation a {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
 }
 
 .user-navigation a,
 .sub-menu a {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 15px;
   line-height: 36px;
   text-transform: none;
@@ -164,7 +166,7 @@ a {
 }
 
 .popular-items a {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
 }
@@ -181,7 +183,7 @@ a {
 /*Сделать позже логотипы компаний на фильтрах + ховер*/
 
 .info h3 {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 47px;
 }
@@ -192,14 +194,14 @@ a {
 }
 
 .partners-list li {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 40px;
 }
 
 .info .button {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
@@ -264,7 +266,7 @@ a {
 }
 
 .footer-site-navigation {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
@@ -337,7 +339,7 @@ a {
 }
 
 .page-title {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 47px;
 }
@@ -353,7 +355,8 @@ a {
 
 .breadcrumbs a {
   display: block;
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 36px;
   color: #000000;
@@ -380,7 +383,7 @@ a {
 }
 
 .pagination-list a {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
