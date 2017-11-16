@@ -116,11 +116,8 @@ a {
 }
 
 .site-navigation a:hover,
-.site-navigation a:active,
 .user-navigation a:hover,
-.user-navigation a:active,
-.sub-menu a:hover,
-.sub-menu a:active {
+.sub-menu a:hover {
   opacity: 0.6;
 }
 
@@ -176,6 +173,11 @@ a {
   list-style: none;
 }
 
+.logotypes-list li {
+  display: inline-block;
+  vertical-align: top;
+}
+
 /*Сделать позже логотипы компаний на фильтрах + ховер*/
 
 .info h3 {
@@ -201,6 +203,21 @@ a {
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
+
+  background: linear-gradient(
+    transparent 40%,
+    #ecc23f 40%,
+    #ecc23f 60%,
+    transparent 60%
+  );
+}
+.button:hover,
+.button:active {
+  background: #ecc23f;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-footer {
