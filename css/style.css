@@ -129,12 +129,12 @@ a {
   opacity: 0.3;
 }
 
-.popular-items {
+.popular-list {
   list-style: none;
 }
 
 /*пока для наглядности*/
-.popular-items li {
+.popular-list li {
   position: relative;
 
   display: inline-block;
@@ -147,7 +147,7 @@ a {
   left: 0;
 }
 
-.popular-items li::before {
+.popular-list li::before {
   content: "";
   display: block;
   width: 160px;
@@ -157,15 +157,15 @@ a {
   background-color: #f7e296;
 }
 
-.popular-items li:hover::before {
+.popular-list li:hover::before {
   background-color: #f0c52e;
 }
 
-.popular-items li:active a {
+.popular-item:active a {
   opacity: 0.3;
 }
 
-.popular-items a {
+.popular-list a {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
