@@ -200,6 +200,7 @@ a {
   line-height: 40px;
 }
 
+form button,
 .button {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
@@ -213,11 +214,18 @@ a {
     transparent 60%
   );
 }
+
+form button {
+  border: 0;
+}
+
+form button:hover,
 .button:hover,
 .button:active {
   background: #ecc23f;
 }
 
+form button:active,
 .button:active {
   color: rgba(0, 0, 0, 0.3);
 }
