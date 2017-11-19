@@ -338,6 +338,19 @@ a {
   opacity: 0.3;
 }
 
+.contacts-form label {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.contacts-form input[type="text"],
+.contacts-form textarea {
+  background-color: #f2f2f2;
+  border: 0;
+}
+
 .page-title {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
