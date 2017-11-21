@@ -74,6 +74,9 @@ body {
   padding-top: 50px;
   margin-bottom: 0;
 
+  /*Временно, чтобы отделить блоки*/
+  margin-bottom: 50px;
+
   min-height: 250px;
 
   background-color: #f7e296;
@@ -200,15 +203,18 @@ a {
 }
 
 .popular-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 90px;
+  padding: 0;
   list-style: none;
+  background-color: lightblue;
 }
 
 /*пока для наглядности*/
 .popular-list li {
   position: relative;
-
-  display: inline-block;
-  vertical-align: top;
 }
 
 .svg {
@@ -227,6 +233,19 @@ a {
   background-color: #f7e296;
 }
 
+.popular-list a {
+  display: block;
+  width: 160px;
+  text-align: left;
+}
+
+
+.popular-list a::before {
+  content: '';
+  display: block;
+  padding-top: 35px;
+}
+
 .popular-list li:hover::before {
   background-color: #f0c52e;
 }
@@ -242,6 +261,11 @@ a {
 }
 
 .logotypes-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 90px;
+  padding: 0;
   list-style: none;
 }
 
