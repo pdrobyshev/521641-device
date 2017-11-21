@@ -65,7 +65,7 @@ body {
   padding: 0 20px;
 
   /*Временно для наглядности*/
-  background-color: lightgrey;
+  /*background-color: lightgrey;*/
 }
 
 .main-navigation {
@@ -209,7 +209,6 @@ a {
   margin-bottom: 90px;
   padding: 0;
   list-style: none;
-  background-color: lightblue;
 }
 
 /*пока для наглядности*/
@@ -260,11 +259,13 @@ a {
   font-size: 18px;
 }
 
+/*Сделать позже логотипы компаний на фильтрах + ховер*/
+
 .logotypes-list {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 90px;
+  margin-bottom: 150px;
   padding: 0;
   list-style: none;
 }
@@ -274,17 +275,43 @@ a {
   vertical-align: top;
 }
 
-/*Сделать позже логотипы компаний на фильтрах + ховер*/
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us,
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 460px;
+  min-height: 550px;
+  padding-bottom: 90px;
+}
+
+.contacts {
+  width: 560px;
+}
 
 .info h3 {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 47px;
+  margin: 0;
+  padding: 0;
 }
 
 .info p {
   font-size: 15px;
   line-height: 30px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.2px;
+}
+
+.partners-list {
+  margin: 0;
 }
 
 .partners-list li {
