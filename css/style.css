@@ -59,11 +59,32 @@ body {
   overflow: hidden;
 }
 
-.main-header {
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  /*Временно для наглядности*/
+  background-color: lightgrey;
+}
+
+.main-navigation {
+  margin-top: 40px;
+  padding: 0 60px;
+  padding-top: 50px;
+  margin-bottom: 0;
+
+  min-height: 250px;
+
   background-color: #f7e296;
   background-image: url("../img/pattern-yellow.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.header-logo {
+  position: absolute;
+  top: 20px;
 }
 
 .header-logo:hover {
@@ -75,6 +96,7 @@ body {
 }
 
 .search-form input {
+  margin-left: 40px;
   border: none;
   background-color: transparent;
   opacity: 0.3;
@@ -95,10 +117,58 @@ a {
   text-decoration: none;
 }
 
+.user-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  max-height: 36px;
+}
+
+.user-navigation {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.user-navigation li:first-child {
+  margin-right: auto;
+}
+
+.user-navigation li:nth-child(2) {
+  margin-right: 60px;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 3px;
+}
+
+.site-navigation li:first-child {
+  margin-right: auto;
+}
+
+.site-navigation li:last-child {
+  margin-left: 110px;
+}
+
+.site-navigation > li:nth-last-child(2) {
+  margin-left: 35px;
+}
+
 .user-navigation,
 .site-navigation,
 .sub-menu {
   list-style: none;
+}
+
+.sub-menu {
+  display: none;
 }
 
 .site-navigation a {
