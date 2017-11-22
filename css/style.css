@@ -442,13 +442,20 @@ form button:active,
 
 .footer-conditions {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.footer-address {
+  margin-right: auto;
+}
+
+.footer-tel {
+  margin-left: auto;
 }
 
 .footer-site-navigation {
   display: flex;
-  justify-content: space-between;
-  width: 440px;
+  justify-content: center;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -456,6 +463,11 @@ form button:active,
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.footer-site-navigation li {
+  padding: 0 30px;
+  letter-spacing: 3px;
 }
 
 .footer-site-navigation a:hover {
@@ -734,6 +746,7 @@ h1 > span {
   justify-content: center;
   width: 760px;
   margin: 0;
+  margin-bottom: 80px;
   padding: 0;
   list-style: none;
   background-color: #ebebeb;
