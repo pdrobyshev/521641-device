@@ -6,40 +6,48 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
 
     <header class="main-header">
-      <nav class="main-navigation">
-        <div class="header-logo">
-          <img src="img/header-logo.png" width="164" height="36" alt="Логотип сайта Device" class="logo">
-        </div>
-        <form class="search-form" action="url" method="GET">
-          <label class="visually-hidden" for="search-field">Поиск</label>
-          <p><input type="search" name="search" id="search-field" placeholder="Поиск по сайту"></p>
-        </form>
-        <ul class="user-navigation">
-          <li><a href="#">Валентин Петухов</a></li>
-          <li><a href="#">Выйти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-        <ul class="site-navigation">
-          <li>
-            <a href="#">Каталог товаров</a>
-            <ul class="sub-menu">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
+      <div class="container">
+        <nav class="main-navigation">
+          <div class="header-logo">
+            <img src="img/header-logo.png" width="164" height="36" alt="Логотип сайта Device" class="logo">
+          </div>
+          <div class="user-block">
+            <form class="search-form" action="url" method="GET">
+              <label class="visually-hidden" for="search-field">Поиск</label>
+              <p><input type="search" name="search" id="search-field" placeholder="Поиск по сайту"></p>
+            </form>
+            <ul class="user-navigation">
+              <li><a href="#">Валентин Петухов</a></li>
+              <li><a href="#">Выйти</a></li>
+              <li><a href="#">Сравнить</a></li>
+              <li><a href="#">Корзина</a></li>
             </ul>
-          </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
+          </div>
+          <div class="site-navigation-wrapper">
+            <ul class="site-navigation-catalog">
+              <li>
+                <a href="catalog.html">Каталог товаров</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                  <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="site-navigation">
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
       <main class="container">
