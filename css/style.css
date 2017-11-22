@@ -136,6 +136,14 @@ a {
   padding: 0;
 }
 
+/*.inner-page .user-navigation {*/
+  /*width: 500px;*/
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+  /*margin: 0;*/
+  /*padding: 0;*/
+/*}*/
+
 .user-navigation li:first-child {
   margin-left: 25px;
 }
@@ -143,6 +151,12 @@ a {
 .user-navigation li:nth-child(2) {
   margin-left: auto;
   margin-right: 60px;
+}
+
+/*Как быть со вложенностью 2х уровней, при правках внутренней страницы?*/
+.inner-page .user-navigation li:nth-child(2) {
+  margin-left: 0;
+  opacity: 0.3;
 }
 
 .site-navigation-wrapper {
