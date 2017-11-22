@@ -70,19 +70,23 @@ body {
 
 .main-navigation {
   margin-top: 40px;
-  padding: 0 60px;
-  padding-top: 50px;
+  padding: 50px 60px;
   margin-bottom: 0;
 
   /*Временно, чтобы отделить блоки*/
   margin-bottom: 50px;
 
-  min-height: 250px;
+  min-height: 200px;
 
   background-color: #f7e296;
   background-image: url("../img/pattern-yellow.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.inner-page .main-navigation {
+  min-height: 135px;
+  padding-bottom: 50px;
 }
 
 .header-logo {
@@ -136,14 +140,6 @@ a {
   padding: 0;
 }
 
-/*.inner-page .user-navigation {*/
-  /*width: 500px;*/
-  /*display: flex;*/
-  /*justify-content: space-between;*/
-  /*margin: 0;*/
-  /*padding: 0;*/
-/*}*/
-
 .user-navigation li:first-child {
   margin-left: 25px;
 }
@@ -157,6 +153,10 @@ a {
 .inner-page .user-navigation li:nth-child(2) {
   margin-left: 0;
   opacity: 0.3;
+}
+
+.inner-page .user-navigation li:nth-child(3) {
+  margin-right: 33px;
 }
 
 .site-navigation-wrapper {
@@ -553,15 +553,18 @@ form button:active,
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 47px;
+  margin-left: 60px;
 }
 
 .breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+  width: 390px;
+  margin: 0;
+  margin-left: 60px;
+  margin-bottom: 50px;
+  padding: 0;
   list-style: none;
-}
-
-.breadcrumbs li {
-  display: inline-block;
-  margin-right: 20px;
 }
 
 .breadcrumbs a {
@@ -581,6 +584,8 @@ form button:active,
 .breadcrumbs a:active {
   opacity: 0.1;
 }
+
+
 
 fieldset {
   border: 0;
