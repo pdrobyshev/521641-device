@@ -468,8 +468,6 @@ form button:active,
 
 .footer-social {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   margin-top: 60px;
   padding-bottom: 60px;
   /*background-color: lightblue;*/
@@ -477,7 +475,7 @@ form button:active,
 
 .social-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -486,11 +484,9 @@ form button:active,
 
 .social-button {
   display: flex;
-  font-size: 0;
+  padding: 0 15px;
   width: 32px;
   height: 32px;
-  border-radius: 50%;
-  background-color: #7e7e7e;
   opacity: 0.3;
 }
 
