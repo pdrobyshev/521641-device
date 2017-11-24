@@ -88,7 +88,8 @@ body {
 }
 
 .inner-page .main-navigation {
-  padding-bottom: 50px;
+  padding-bottom: 47px;
+  margin-bottom: 46px;
 }
 
 .header-logo {
@@ -168,6 +169,10 @@ a {
   margin-right: 58px;
 }
 
+.inner-page .user-navigation li:last-child {
+  margin-left: 5px;
+}
+
 .user-navigation li:first-child::before {
   content: '';
   display: block;
@@ -183,7 +188,7 @@ a {
   background-position: center;
 }
 
-.user-navigation li:nth-of-type(2)::before {
+.user-navigation li:nth-last-of-type(2)::before {
   content: '';
   display: block;
   width: 15px;
@@ -284,10 +289,14 @@ a {
 
 .site-navigation-catalog a,
 .site-navigation a {
+  display: block;
+  margin: 0;
+  padding: 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
+
 }
 
 .user-navigation a,
@@ -785,17 +794,19 @@ form button:active,
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 47px;
+  letter-spacing: 0.47px;
+  color: #000;
   margin: 0;
   padding: 0;
   margin-left: 60px;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 }
 
 .breadcrumbs {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  /*width: 390px;*/
   margin: 0;
   margin-left: 60px;
   margin-bottom: 50px;
@@ -804,7 +815,38 @@ form button:active,
 }
 
 .breadcrumbs li {
-  margin-right: 50px;
+  margin-right: 37px;
+  letter-spacing: 0.14px;
+}
+
+.breadcrumbs li:first-child::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+
+  position: absolute;
+  top: 13px;
+  left: 65px;
+
+  background-image: url(../img/nav-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.breadcrumbs li:nth-child(2)::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+
+  position: absolute;
+  top: 13px;
+  left: 216px;
+
+  background-image: url(../img/nav-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .breadcrumbs a {
