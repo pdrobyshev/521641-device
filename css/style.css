@@ -314,8 +314,6 @@ a {
 
 .sub-menu li {
   margin-right: 60px;
-
-  background-color: lightblue;
 }
 
 .site-navigation-catalog a,
@@ -1010,6 +1008,10 @@ b {
 .catalog-item img {
   margin-top: 70px;
   margin-bottom: 35px;
+}
+
+.catalog-item:hover img {
+  opacity: 0.7;
 }
 
 .catalog-item h1 {
