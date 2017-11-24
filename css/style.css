@@ -105,6 +105,21 @@ body {
   opacity: 0.3;
 }
 
+.search-form::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  top: 21px;
+  left: 1px;
+
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .search-form input {
   margin-left: 40px;
   border: none;
@@ -128,6 +143,7 @@ a {
 }
 
 .user-block {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -149,7 +165,52 @@ a {
 
 .user-navigation li:nth-child(2) {
   margin-left: auto;
-  margin-right: 65px;
+  margin-right: 58px;
+}
+
+.user-navigation li:first-child::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+
+  position: absolute;
+  right: 486px;
+  top: 22px;
+
+  background-image: url(../img/user.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.user-navigation li:nth-of-type(2)::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+
+  position: absolute;
+  right: 201px;
+  top: 23px;
+
+  background-image: url(../img/compare.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.user-navigation li:last-child::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+
+  position: absolute;
+  right: 70px;
+  top: 22px;
+
+  background-image: url(../img/cart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*Как быть со вложенностью 2х уровней, при правках внутренней страницы?*/
@@ -163,6 +224,7 @@ a {
 }
 
 .site-navigation-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -170,6 +232,21 @@ a {
 .site-navigation-catalog {
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+
+.site-navigation-catalog li::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  top: 5px;
+  left: 228px;
+
+  background-image: url(../img/plus.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .site-navigation {
@@ -216,10 +293,11 @@ a {
 .user-navigation a,
 .sub-menu a {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 15px;
   line-height: 36px;
   text-transform: none;
+  letter-spacing: 0.15px;
 }
 
 .site-navigation a:hover,
@@ -245,6 +323,9 @@ a {
   margin-top: 481px;
   padding: 0;
   list-style: none;
+
+  /*Временно*/
+  margin-bottom: 566px;
 }
 
 .popular-list li {
@@ -343,7 +424,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 150px;
+  margin-bottom: 145px;
   padding: 0;
   list-style: none;
 }
@@ -367,7 +448,6 @@ a {
 .contacts {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 460px;
 }
 
@@ -378,36 +458,37 @@ a {
 
 .info h3 {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
   padding: 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 47px;
+  letter-spacing: 0.47px;
+  color: #000;
 }
 
 .info p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: bold;
   font-size: 15px;
   line-height: 30px;
   margin: 0;
   padding: 0;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.6px;
 }
 
 .info p:first-of-type {
-  margin-bottom: 40px;
-}
-
-.about-us p:last-of-type {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .partners-list {
   margin: 0;
+  margin-top: 57px;
 }
 
 .info .button {
-  margin-top: 80px;
-  margin-bottom: 90px;
+  margin-top: 63px;
+  margin-bottom: 87px;
 }
 
 .partners-list li {
@@ -419,12 +500,15 @@ a {
 
 form button,
 .button {
+  width: 260px;
+  text-align: center;
+  letter-spacing: 3.6px;
+  padding-left: 2px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
-  width: 200px;
-  text-align: center;
 
   background: linear-gradient(
     transparent 40%,
@@ -459,10 +543,17 @@ form button:active,
 }
 
 .footer-user {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 37px;
+}
+
+.footer-logo {
+  position: absolute;
+  top: 5px;
+  left: -1px;
 }
 
 .footer-logo:hover {
@@ -478,6 +569,7 @@ form button:active,
 }
 
 .footer-user-navigation {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -487,6 +579,55 @@ form button:active,
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.footer-user-navigation li:first-child::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  top: 8px;
+  left: -29px;
+
+  background-image: url(../img/user.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-user-navigation li:nth-child(2)::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  top: 8px;
+  left: 82px;
+
+  background-image: url(../img/compare.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-user-navigation li:last-child::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  top: 8px;
+  left: 214px;
+
+  background-image: url(../img/cart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-user-navigation li:first-child {
+  margin-left: 2px;
 }
 
 .footer-user-navigation a {
@@ -527,7 +668,7 @@ form button:active,
 
 .footer-site-navigation {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -538,8 +679,19 @@ form button:active,
 }
 
 .footer-site-navigation li {
-  padding: 0 30px;
-  letter-spacing: 3px;
+  letter-spacing: 3.6px;
+}
+
+.footer-site-navigation li:first-child {
+  padding-right: 34px;
+}
+
+.footer-site-navigation li:nth-child(2) {
+  padding-right: 32px;
+}
+
+.footer-site-navigation li:last-child {
+  margin-right: 37px;
 }
 
 .footer-site-navigation a:hover {
@@ -561,13 +713,14 @@ form button:active,
   justify-content: space-between;
   margin: 0;
   margin-left: auto;
+  margin-right: -25px;
   padding: 0;
   list-style: none;
 }
 
 .social-button {
   display: flex;
-  padding: 0 10px;
+  padding: 0 11px;
   width: 32px;
   height: 32px;
   opacity: 0.3;
