@@ -69,10 +69,13 @@ body {
 }
 
 .main-navigation {
+  position: relative;
   margin-top: 40px;
   margin-bottom: 0;
-  padding: 50px 60px;
-  padding-bottom: 110px;
+  padding-top: 28px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 160px;
 
   /*Временно, чтобы отделить блоки*/
   margin-bottom: 50px;
@@ -90,7 +93,8 @@ body {
 
 .header-logo {
   position: absolute;
-  top: 20px;
+  top: -19px;
+  left: 59px;
 }
 
 .header-logo:hover {
@@ -127,7 +131,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 21px;
 }
 
 .user-navigation {
@@ -140,12 +144,12 @@ a {
 }
 
 .user-navigation li:first-child {
-  margin-left: 25px;
+  margin-left: 27px;
 }
 
 .user-navigation li:nth-child(2) {
   margin-left: auto;
-  margin-right: 60px;
+  margin-right: 65px;
 }
 
 /*Как быть со вложенностью 2х уровней, при правках внутренней страницы?*/
@@ -176,14 +180,18 @@ a {
 }
 
 .site-navigation li:nth-child(2) {
-  margin-right: 40px;
+  margin-right: 70px;
+}
+
+.site-navigation li:last-child {
+  margin-right: 0;
 }
 
 .site-navigation-catalog,
 .site-navigation {
   margin: 0;
   padding: 0;
-  letter-spacing: 3px;
+  letter-spacing: 3.6px;
 }
 
 .user-navigation,
