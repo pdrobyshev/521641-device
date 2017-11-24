@@ -242,6 +242,7 @@ a {
   flex-wrap: wrap;
   margin: 0;
   margin-bottom: 90px;
+  margin-top: 481px;
   padding: 0;
   list-style: none;
 }
@@ -254,6 +255,36 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.svg1 {
+  top: 53px;
+  left: 31px;
+}
+
+.svg2 {
+  top: 41px;
+  left: 38px;
+}
+
+.svg3 {
+  top: 38px;
+  left: 49px;
+}
+
+.svg4 {
+  top: 50px;
+  left: 28px;
+}
+
+.svg5 {
+  top: 32px;
+  left: 55px;
+}
+
+.svg6 {
+  top: 49px;
+  left: 13px;
 }
 
 .popular-list li::before {
@@ -273,13 +304,23 @@ a {
   display: block;
   width: 160px;
   text-align: left;
+  margin-top: 35px;
+  letter-spacing: 0.18px;
+  line-height: 21px;
 }
 
+.popular-item:first-of-type a {
+  letter-spacing: 0.45px;
+  width: 140px;
+}
+
+.popular-item:nth-of-type(2) a {
+  width: 125px;
+}
 
 .popular-list a::before {
   content: '';
   display: block;
-  padding-top: 35px;
 }
 
 .popular-list li:hover::before {
