@@ -18,6 +18,7 @@
             <form class="search-form" action="url" method="GET">
               <label class="visually-hidden" for="search-field">Поиск</label>
               <p><input type="search" name="search" id="search-field" placeholder="Поиск по сайту"></p>
+              <!--<button class="search-button">Найти</button>-->
             </form>
             <ul class="user-navigation">
               <li><a href="#">Войти</a></li>
@@ -52,7 +53,86 @@
     <main class="container">
       <h1 class="visually-hidden">Интернет-магазин гаджетов «Device»</h1>
 
-      <!--Здесь будет слайдер-->
+      <section class="product-slider">
+        <h2 class="visually-hidden">Лучшие товары</h2>
+          <input class="visually-hidden" type="radio" id="product1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="product2" name="toggle">
+          <input class="visually-hidden" type="radio" id="product3" name="toggle">
+          <div class="slider-controls">
+            <label class="slider-controls-item-1" for="product1">Первый</label>
+            <label class="slider-controls-item-2" for="product2">Второй</label>
+            <label class="slider-controls-item-3" for="product3">Третий</label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item">
+              <h3 class="visually-hidden">Самая длинная палка для селфи</h3>
+              <div class="slider-photo">
+                <img class="slider-product-photo" src="img/slider-1.png" width="384" height="486" alt="Палки для селфи">
+              </div>
+              <div class="slider-product-description">
+                <b>Делай селфи,<br> как Бен Стиллер!</b>
+                <p>Самая длинная палка для селфи доступна в нашем магазине.
+                  Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.
+                </p>
+                <a class="button slider-button" href="#">Подробнее</a>
+                <table class="slider-table">
+                  <tr class="slider-table-row">
+                    <th>8,5 м</th>
+                    <th>5 кг</th>
+                    <th>Карбон</th>
+                  </tr>
+                  <tr class="slider-table-row">
+                    <td>Длина палки</td>
+                    <td>Вес палки</td>
+                    <td>Материал</td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <h3 class="visually-hidden">Фитнес-браслет</h3>
+              <img class="slider-product-photo" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+              <div class="slider-product-description">
+                <b>Худеем<br> правильно!</b>
+                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+                  не пропускать занятия и соблюдать диету.
+                </p>
+                <a class="button slider-button" href="#">Подробнее</a>
+                <table class="slider-table">
+                  <tr class="slider-table-row">
+                    <th>48 часов</th>
+                  </tr>
+                  <tr class="slider-table-row">
+                    <td>Без подрязядки</td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <h3 class="visually-hidden">Квадрокоптер</h3>
+              <img class="slider-product-photo" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+              <div class="slider-product-description">
+                <b>Порхает как бабочка, жалит как пчела!</b>
+                <p>Этот обычный, на первый взгляд, квадрокоптер
+                  оснащен мощным лазером, замаскированным под стандартную камеру.
+                </p>
+                <a class="button slider-button" href="#">Подробнее</a>
+                <table class="slider-table">
+                  <tr class="slider-table-row">
+                    <th>800 м</th>
+                    <th>50 м</th>
+                  </tr>
+                  <tr class="slider-table-row">
+                    <td>Дальность полета</td>
+                    <td>Радиус поражения</td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+          </ul>
+      </section>
 
       <section class="popular">
         <h2 class="visually-hidden">Популярные товары</h2>
