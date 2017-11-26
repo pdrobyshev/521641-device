@@ -84,7 +84,7 @@ body {
   background-repeat: repeat;
 }
 
-.main-navigation::after {
+.index::after {
   content: '';
 
   position: absolute;
@@ -800,6 +800,12 @@ form button,
   text-align: center;
   letter-spacing: 3.6px;
   cursor: pointer;
+}
+
+
+/*Изменить размеры, доделать ховер на карточки товаров*/
+.inner-page .button {
+  width: 220px;
 }
 
 .button::before {
