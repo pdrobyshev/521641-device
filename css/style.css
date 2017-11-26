@@ -84,6 +84,18 @@ body {
   background-repeat: repeat;
 }
 
+.main-navigation::after {
+  content: '';
+
+  position: absolute;
+  bottom: 67px;
+  left: 600px;
+
+  width: 100px;
+  height: 7px;
+  background-color: #fff;
+}
+
 .inner-page .main-navigation {
   padding-bottom: 47px;
   margin-bottom: 46px;
@@ -696,6 +708,7 @@ td {
 
 .about-us,
 .contacts {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 460px;
@@ -715,6 +728,30 @@ td {
   font-size: 47px;
   letter-spacing: 0.47px;
   color: #000;
+}
+
+.about-us::after {
+  content: '';
+
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 80px;
+  height: 10px;
+
+  background-color: #000000;
+}
+
+.contacts::after {
+  content: '';
+
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 80px;
+  height: 10px;
+
+  background-color: #000000;
 }
 
 .info p {
@@ -794,6 +831,22 @@ form button:active,
   background-image: url("../img/pattern-dark.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.main-footer .container {
+  position: relative;
+}
+
+.main-footer .container::after {
+  content: '';
+
+  position: absolute;
+  left: 20px;
+  bottom: 80px;
+
+  width: 80px;
+  height: 10px;
+  background-color: #ecc23f;
 }
 
 .footer-user {
