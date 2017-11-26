@@ -227,6 +227,7 @@ a {
 }
 
 /*Как быть со вложенностью 2х уровней, при правках внутренней страницы?*/
+/*Задавать отдельный класс на лишку?*/
 .inner-page .user-navigation li:nth-child(2) {
   margin-left: 0;
   opacity: 0.3;
@@ -361,12 +362,6 @@ a {
   opacity: 0.3;
 }
 
-
-
-
-
-
-
 .product-slider {
   position: relative;
 }
@@ -422,6 +417,8 @@ a {
   margin-top: -111px;
 }
 
+/*Отдельные слайды начало*/
+
 .slider-item:nth-child(1) {
   display: flex;
   justify-content: space-between;
@@ -436,6 +433,9 @@ a {
   /*display: flex;*/
   /*justify-content: space-between;*/
 /*}*/
+
+/*Отдельные слайды конец*/
+
 
 /*#product1:checked ~ .slider-list .slider-item:nth-child(1) {*/
   /*display: flex;*/
@@ -573,12 +573,6 @@ td {
   font-size: 13px;
   line-height: 20px;
 }
-
-
-
-
-
-
 
 .popular-list {
   display: flex;
