@@ -1060,12 +1060,17 @@ form button:active,
   background-position: center;
 }
 
-.copyright {
+.copyright{
   margin-left: auto;
   width: 27px;
-  height: 35px;
   background-image: url("../img/logo-html.svg");
   background-repeat: no-repeat;
+}
+
+.copyright a {
+  display: block;
+  width: 27px;
+  height: 35px;
 }
 
 .copyright:hover {
