@@ -33,6 +33,7 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
 
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -84,7 +85,7 @@ body {
   background-repeat: repeat;
 }
 
-.index::after {
+.main-navigation::after {
   content: '';
 
   position: absolute;
@@ -428,11 +429,13 @@ a {
 /*.slider-item:nth-child(2) {*/
   /*display: flex;*/
   /*justify-content: space-between;*/
+  /*margin-bottom: -2px;*/
 /*}*/
 
 /*.slider-item:nth-child(3) {*/
   /*display: flex;*/
   /*justify-content: space-between;*/
+  /*padding-bottom: 16px;*/
 /*}*/
 
 /*Отдельные слайды конец*/
@@ -473,12 +476,12 @@ a {
 }
 
 .slider-item:nth-child(2) .slider-product-photo {
-  margin-left: 110px;
-  margin-top: 10px;
+  margin-left: 116px;
+  margin-top: 12px;
 }
 
 .slider-item:nth-child(3) .slider-product-photo {
-  margin-left: 30px;
+  margin-left: 31px;
   margin-top: 65px;
 }
 
@@ -560,6 +563,14 @@ a {
   margin-right: 78px;
 }
 
+.slider3-th {
+  margin-left: -18px;
+}
+
+.slider3-td {
+  margin-left: -34px;
+}
+
 th {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: normal;
@@ -579,7 +590,7 @@ td {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 90px;
+  margin-bottom: 167px;
   margin-top: 97px;
   padding: 0;
   list-style: none;
@@ -675,13 +686,146 @@ td {
   font-size: 18px;
 }
 
+/*Второй слайдер*/
+
+.features-slider {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 233px;
+}
+
+.features-slider .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-slider-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #000;
+}
+
+.features-slider-list::after {
+  content: '';
+  position: absolute;
+  top: -82px;
+  left: 277px;
+
+  width: 7px;
+  height: 319px;
+
+
+  background-color: #000000;
+}
+
+.features-slider-list .button {
+  width: 160px;
+}
+
+.features-slider-list .button-active {
+  box-sizing: border-box;
+  width: 280px;
+  text-align: left;
+  padding-left: 20px;
+  background-color: #000000;
+  color: #f7e184;
+}
+
+.features-slider-list .button-active:hover {
+  color: #000;
+}
+
+.features-slider-list .button-active:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.features-slider-list .button:first-of-type {
+  margin-bottom: 22px;
+}
+
+.features-slider-list .button:nth-of-type(2) {
+  margin-left: 2px;
+  margin-bottom: 25px;
+}
+
+.features-slider-list .button:last-of-type {
+  margin-left: 1px;
+}
+
+.features-slider-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 760px;
+}
+
+.features-slider-item h3 {
+  margin: 0;
+  margin-left: 2px;
+  margin-bottom: 40px;
+  padding: 0;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 47px;
+  letter-spacing: 0.47px;
+  color: #000;
+}
+
+.features-slider-item p {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+}
+
+.features-slider-item h3,
+.features-slider-item p {
+  width: 460px;
+}
+
+.features-slider-item:nth-of-type(3) p {
+  width: 430px;
+}
+
+.feature-slider-photo {
+  position: absolute;
+  right: 66px;
+  top: 3px;
+}
+
+.warranty {
+  position: absolute;
+  top: -21px;
+  right: 46px;
+}
+
+.credit {
+  position: absolute;
+  top: -21px;
+  right: 70px;
+}
+
+.features-slider-item:not(:nth-of-type(1)) {
+  display: none;
+}
+
 /*Сделать позже логотипы компаний на фильтрах + ховер*/
 
 .logotypes-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 145px;
+  margin-bottom: 137px;
   padding: 0;
   list-style: none;
 }
@@ -706,21 +850,23 @@ td {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   width: 460px;
 }
 
 .contacts {
-  justify-content: space-between;
   width: 560px;
 }
 
 .info h3 {
   margin: 0;
-  margin-bottom: 53px;
   padding: 0;
+  padding-bottom: 43px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 47px;
+  line-height: 47px;
   letter-spacing: 0.47px;
   color: #000;
 }
@@ -729,10 +875,10 @@ td {
   content: '';
 
   position: absolute;
-  top: -50px;
+  top: -53px;
   left: 0;
   width: 80px;
-  height: 10px;
+  height: 7px;
 
   background-color: #000000;
 }
@@ -741,36 +887,47 @@ td {
   content: '';
 
   position: absolute;
-  top: -50px;
+  top: -53px;
   left: 0;
   width: 80px;
-  height: 10px;
+  height: 7px;
 
   background-color: #000000;
 }
 
 .info p {
+  margin: 0;
+  margin-left: -1px;
+  padding: 0;
+
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: bold;
   font-size: 15px;
+  color: #000;
   line-height: 30px;
-  margin: 0;
-  padding: 0;
   letter-spacing: -0.6px;
 }
 
 .info p:first-of-type {
-  margin-bottom: 35px;
+  padding-bottom: 30px;
+}
+
+.about-us p:last-of-type {
+  padding-bottom: 66px;
 }
 
 .partners-list {
   margin: 0;
-  margin-top: 57px;
+  padding: 0;
+  padding-bottom: 54px;
+  list-style: none;
+  padding-left: 36px;
 }
 
 .info .button {
-  margin-top: 63px;
-  margin-bottom: 87px;
+  margin-top: auto;
+  margin-bottom: 82px;
+  margin-left: 1px;
 }
 
 .partners-list li {
@@ -778,6 +935,7 @@ td {
   font-weight: bold;
   font-size: 16px;
   line-height: 40px;
+  color: #000;
 }
 
 form button,
@@ -843,10 +1001,10 @@ form button:active,
 
   position: absolute;
   left: 20px;
-  bottom: 80px;
+  bottom: 74px;
 
   width: 80px;
-  height: 10px;
+  height: 7px;
   background-color: #ecc23f;
 }
 
@@ -961,7 +1119,7 @@ form button:active,
 .footer-tel {
   color: #ffffff;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 25px;
   margin: 0;
   padding: 0;
 }
