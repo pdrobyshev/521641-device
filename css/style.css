@@ -353,6 +353,7 @@ a {
 
 .site-navigation-catalog:hover .sub-menu {
   display: flex;
+  z-index: 2;
 }
 
 .site-navigation-catalog a:active,
