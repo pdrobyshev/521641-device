@@ -836,6 +836,22 @@ td {
   margin-right: 40px;
 }
 
+.logotypes-list-item:first-of-type:hover img {
+  background-image: url(../img/logo-1.png);
+}
+
+.logotypes-list-item:nth-of-type(2):hover img {
+  background-image: url(../img/logo-2.png);
+}
+
+.logotypes-list-item:nth-of-type(3):hover img {
+  background-image: url(../img/logo-3.png);
+}
+
+.logotypes-list-item:last-of-type:hover img {
+  background-image: url(../img/logo-4.png);
+}
+
 .logotypes-list li:nth-child(4n) {
   margin-right: 0;
 }
