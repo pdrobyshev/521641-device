@@ -43,6 +43,11 @@ body {
   background-color: #fff;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
@@ -1142,7 +1147,7 @@ form button:active,
   list-style: none;
 }
 
-.footer-user-navigation li:first-child::before {
+.footer-user-navigation-item:first-child a::before {
   content: '';
   display: block;
   width: 20px;
@@ -1157,7 +1162,7 @@ form button:active,
   background-position: center;
 }
 
-.footer-user-navigation li:nth-child(2)::before {
+.footer-user-navigation-item:nth-child(2) a::before {
   content: '';
   display: block;
   width: 20px;
@@ -1172,7 +1177,7 @@ form button:active,
   background-position: center;
 }
 
-.footer-user-navigation li:last-child::before {
+.footer-user-navigation-item:last-child a::before {
   content: '';
   display: block;
   width: 20px;
