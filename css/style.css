@@ -1079,7 +1079,7 @@ form button:active,
 }
 
 .main-footer {
-  padding-top: 60px;
+  padding-top: 59px;
 
   background-color: #464646;
   background-image: url("../img/pattern-dark.jpg");
@@ -1096,7 +1096,7 @@ form button:active,
 
   position: absolute;
   left: 20px;
-  bottom: 74px;
+  bottom: 80px;
 
   width: 80px;
   height: 7px;
@@ -1164,8 +1164,8 @@ form button:active,
   height: 20px;
 
   position: absolute;
-  top: 8px;
-  left: 82px;
+  top: 9px;
+  left: 83px;
 
   background-image: url(../img/compare-footer.svg);
   background-repeat: no-repeat;
@@ -1265,7 +1265,7 @@ form button:active,
 
 .footer-social {
   display: flex;
-  padding-bottom: 60px;
+  padding-bottom: 67px;
 }
 
 .social-buttons {
@@ -1633,6 +1633,32 @@ b {
   padding: 0;
 }
 
+.item-new {
+  position: absolute;
+  top: 115px;
+  right: 39px;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.item-new::before {
+  content: '';
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -37px;
+  right: -32px;
+  background-image: url(../img/round_shape.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 h1 > a {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
@@ -1657,8 +1683,8 @@ h1 > span {
   flex-wrap: wrap;
   width: 760px;
   margin: 0;
-  margin-top: 22px;
-  margin-bottom: 77px;
+  margin-top: 52px;
+  margin-bottom: 76px;
   padding: 0;
   list-style: none;
   background-color: #ebebeb;
