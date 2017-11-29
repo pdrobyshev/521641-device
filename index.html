@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <header class="main-header">
+    <header class="main-header main-page">
       <div class="container">
         <nav class="main-navigation">
           <div class="header-logo">
@@ -17,18 +17,18 @@
           <div class="user-block">
             <form class="search-form" action="url" method="GET">
               <label class="visually-hidden" for="search-field">Поиск</label>
-              <p><input type="search" name="search" id="search-field" placeholder="Поиск по сайту"></p>
-              <!--<button class="search-button">Найти</button>-->
+              <p><input class="search-field" type="search" name="search" id="search-field" placeholder="Поиск по сайту"></p>
+              <button class="search-button">Найти</button>
             </form>
             <ul class="user-navigation">
-              <li><a href="#">Войти</a></li>
-              <li><a href="#">Сравнить</a></li>
-              <li><a href="#">Корзина</a></li>
+              <li class="user-navigation-item"><a href="#">Войти</a></li>
+              <li class="user-navigation-item"><a href="#">Сравнить</a></li>
+              <li class="user-navigation-item"><a href="#">Корзина</a></li>
             </ul>
           </div>
           <div class="site-navigation-wrapper">
             <ul class="site-navigation-catalog">
-              <li>
+              <li class="site-navigation-item">
                 <a href="catalog.html">Каталог товаров</a>
                 <ul class="sub-menu">
                   <li><a href="#">Виртуальная реальность</a></li>

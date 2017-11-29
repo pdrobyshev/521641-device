@@ -33,7 +33,6 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
 
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -64,19 +63,16 @@ body {
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
-
-  /*Временно для наглядности*/
-  /*background-color: lightgrey;*/
 }
 
 .main-navigation {
   position: relative;
   margin: 0;
   margin-top: 40px;
-  padding-top: 28px;
+  padding-top: 23px;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 160px;
+  padding-bottom: 151px;
 
 
   background-color: #f7e296;
@@ -85,12 +81,12 @@ body {
   background-repeat: repeat;
 }
 
-.main-navigation::after {
+.main-page::after {
   content: '';
 
   position: absolute;
-  bottom: 67px;
-  left: 600px;
+  top: 265px;
+  right: 831px;
 
   width: 100px;
   height: 7px;
@@ -131,20 +127,61 @@ body {
 }
 
 .search-form input {
-  margin-left: 40px;
+  margin: 0;
+  padding: 0;
+  padding-left: 40px;
+  padding-bottom: 15px;
   border: none;
   background-color: transparent;
   opacity: 0.3;
 }
 
-.search-form input:hover {
+.search-button {
+  display: none;
+  position: absolute;
+  top: 6px;
+  left: 380px;
+  width: auto;
+  margin: 0;
+  padding: 5px;
+  border: 2px solid #000000;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  text-transform: none;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.search-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search-button:active {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-field:hover {
   opacity: 0.6;
 }
 
-.search-form input:focus {
+.search-field:focus {
   outline: none;
   opacity: 1;
+  width: 440px;
+  padding-bottom: 13px;
   border-bottom: 2px solid black;
+}
+
+.search-field:focus .search-button {
+  display: block;
 }
 
 a {
@@ -157,7 +194,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 21px;
+  margin-bottom: 17px;
 }
 
 .user-navigation {
@@ -182,7 +219,7 @@ a {
   margin-left: 5px;
 }
 
-.user-navigation li:first-child::before {
+.user-navigation-item:first-child a::before {
   content: '';
   display: block;
   width: 15px;
@@ -190,14 +227,14 @@ a {
 
   position: absolute;
   right: 486px;
-  top: 22px;
+  top: 27px;
 
   background-image: url(../img/user.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.user-navigation li:nth-last-of-type(2)::before {
+.user-navigation-item:nth-last-of-type(2) a::before {
   content: '';
   display: block;
   width: 15px;
@@ -205,14 +242,14 @@ a {
 
   position: absolute;
   right: 201px;
-  top: 23px;
+  top: 28px;
 
   background-image: url(../img/compare.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.user-navigation li:last-child::before {
+.user-navigation-item:last-child a::before {
   content: '';
   display: block;
   width: 15px;
@@ -220,7 +257,7 @@ a {
 
   position: absolute;
   right: 70px;
-  top: 22px;
+  top: 27px;
 
   background-image: url(../img/cart.svg);
   background-repeat: no-repeat;
@@ -243,6 +280,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 9px;
 }
 
 .site-navigation-catalog {
@@ -250,7 +288,7 @@ a {
   justify-content: flex-start;
 }
 
-.site-navigation-catalog > li::after {
+.site-navigation-item > a::after {
   content: '';
   display: block;
   width: 20px;
@@ -849,8 +887,6 @@ td {
   display: none;
 }
 
-/*Сделать позже логотипы компаний на фильтрах + ховер*/
-
 .logotypes-list {
   display: flex;
   flex-wrap: wrap;
@@ -949,9 +985,9 @@ td {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: bold;
   font-size: 15px;
-  color: #000;
   line-height: 30px;
   letter-spacing: -0.6px;
+  color: #000;
 }
 
 .info p:first-of-type {
@@ -1116,7 +1152,7 @@ form button:active,
   top: 8px;
   left: -29px;
 
-  background-image: url(../img/user.svg);
+  background-image: url(../img/user-footer.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1131,7 +1167,7 @@ form button:active,
   top: 8px;
   left: 82px;
 
-  background-image: url(../img/compare.svg);
+  background-image: url(../img/compare-footer.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1146,7 +1182,7 @@ form button:active,
   top: 8px;
   left: 214px;
 
-  background-image: url(../img/cart.svg);
+  background-image: url(../img/cart-footer.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
