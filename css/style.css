@@ -508,6 +508,7 @@ a {
   text-transform: none;
   letter-spacing: 0.47px;
   color: #000000;
+  z-index: 1;
 }
 
 .slider-product-description p {
@@ -584,6 +585,33 @@ td {
   font-weight: normal;
   font-size: 13px;
   line-height: 20px;
+  color: #000;
+}
+
+.product-slider-number {
+  position: absolute;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 179px;
+  line-height: 179px;
+  letter-spacing: 1.79px;
+  color: #ffffff;
+}
+
+.number01 {
+  top: -15px;
+  right: 46px;
+}
+
+.number02 {
+  top: -15px;
+  right: 46px;
+}
+
+.number03 {
+  top: -15px;
+  right: 46px;
 }
 
 .popular-list {
@@ -692,6 +720,8 @@ td {
   display: flex;
   justify-content: space-between;
   margin-bottom: 233px;
+
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff 11%, #e5e5e5 11%);
 }
 
 .features-slider .container {
@@ -947,11 +977,24 @@ td {
 }
 
 .partners-list li {
+  position: relative;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 40px;
   color: #000;
+}
+
+.partners-list li::before {
+  content: '';
+  position: absolute;
+  left: -35px;
+  top: 16px;
+  width: 4px;
+  height: 4px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
 }
 
 form button,
