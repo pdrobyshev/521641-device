@@ -842,18 +842,19 @@ td {
 
 .feature-slider-photo {
   position: absolute;
+}
+
+.delivery {
   right: 66px;
   top: 3px;
 }
 
 .warranty {
-  position: absolute;
   top: -21px;
   right: 46px;
 }
 
 .credit {
-  position: absolute;
   top: -21px;
   right: 70px;
 }
