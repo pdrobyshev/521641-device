@@ -736,12 +736,18 @@ td {
 
 /*Второй слайдер*/
 
+.features-slider-wrapper {
+  margin: 0;
+  padding: 0;
+  height: 306px;
+  margin-bottom: 94px;
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff 18px, #e5e5e5 18px);
+}
+
 .features-slider {
   display: flex;
   justify-content: space-between;
   margin-bottom: 233px;
-
-  background-image: linear-gradient(to bottom, #ffffff, #ffffff 11%, #e5e5e5 11%);
 }
 
 .features-slider input {
@@ -771,6 +777,7 @@ td {
 
 .features-slider-list .button {
   width: 160px;
+  z-index: 1;
 }
 
 .features-slider-list .button-active,
@@ -781,6 +788,11 @@ td {
   padding-left: 20px;
   background-color: #000000;
   color: #f7e184;
+}
+
+.features-slider-list .button-active::before,
+.features-slider-list .button:active::before {
+  background-color: #000000;
 }
 
 .features-slider-list .button-active:hover {
@@ -918,6 +930,7 @@ td {
 
 .info h3 {
   margin: 0;
+  margin-left: -2px;
   padding: 0;
   padding-bottom: 43px;
 
