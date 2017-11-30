@@ -55,9 +55,9 @@
 
       <section class="product-slider">
         <h2 class="visually-hidden">Лучшие товары</h2>
-          <input class="visually-hidden" type="radio" id="product1" name="toggle" checked>
-          <input class="visually-hidden" type="radio" id="product2" name="toggle">
-          <input class="visually-hidden" type="radio" id="product3" name="toggle">
+          <input type="radio" id="product1" name="toggle" checked>
+          <input type="radio" id="product2" name="toggle">
+          <input type="radio" id="product3" name="toggle">
           <div class="slider-controls">
             <label class="slider-controls-item-1" for="product1">Первый</label>
             <label class="slider-controls-item-2" for="product2">Второй</label>
@@ -124,11 +124,11 @@
                 <table class="slider-table">
                   <tr class="slider-table-row">
                     <th>800 м</th>
-                    <th class="slider3-th">50 м</th>
+                    <th>50 м</th>
                   </tr>
                   <tr class="slider-table-row">
-                    <td>Дальность полета</td>
-                    <td class="slider3-td">Радиус поражения</td>
+                    <td class="slider3-td">Дальность полета</td>
+                    <td>Радиус поражения</td>
                   </tr>
                 </table>
                 <span class="product-slider-number number03">03</span>
@@ -380,11 +380,14 @@
       </section>
 
       <section class="features-slider">
-        <ul class="features-slider-list">
-          <li class="button button-active">Доставка</li>
-          <li class="button">Гарантия</li>
-          <li class="button">Кредит</li>
-        </ul>
+        <input type="radio" id="feature1" name="ftoggle" checked>
+        <input type="radio" id="feature2" name="ftoggle">
+        <input type="radio" id="feature3" name="ftoggle">
+        <div class="features-slider-list">
+          <label class="button button-active" for="feature1">Доставка</label>
+          <label class="button " for="feature2">Гарантия</label>
+          <label class="button " for="feature3">Кредит</label>
+        </div>
 
         <div class="features-slider-item">
           <h3>Доставка</h3>
