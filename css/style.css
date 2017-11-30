@@ -185,7 +185,7 @@ img {
   border-bottom: 2px solid black;
 }
 
-.search-form + .search-button {
+.search-field:focus + .search-button {
   display: block;
 }
 
@@ -200,6 +200,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 17px;
+  padding: 15px 0;
 }
 
 .user-navigation {
@@ -1049,7 +1050,7 @@ form button:active,
 }
 
 .main-footer {
-  padding-top: 59px;
+  padding-top: 60px;
 
   background-color: #464646;
   background-image: url("../img/pattern-dark.jpg");
