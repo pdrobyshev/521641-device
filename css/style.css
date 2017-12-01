@@ -1462,6 +1462,10 @@ form button:active,
   width: 760px;
 }
 
+.filters-form {
+  padding-top: 78px;
+}
+
 fieldset {
   display: flex;
   margin: 0;
@@ -1469,10 +1473,32 @@ fieldset {
   border: 0;
 }
 
+fieldset:first-child {
+  padding-bottom: 89px;
+}
+
+fieldset:nth-child(2) {
+  padding-bottom: 40px;
+}
+
+fieldset:nth-child(3) {
+  padding-bottom: 45px;
+}
+
+.inner-page .filters-form-button {
+  width: 200px;
+  background-color: transparent;
+  z-index: 1;
+}
+
 .filters legend {
+  margin-left: -1px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
+  color: #000;
+  letter-spacing: 0.18px;
 }
 
 .filters h2 {
@@ -1480,17 +1506,20 @@ fieldset {
   align-items: center;
   min-height: 70px;
   margin: 0;
+  margin-left: 1px;
   padding: 0;
   text-transform: uppercase;
 }
 
 .sort-and-filter-heading {
+  margin-left: 1px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
   color: #000000;
-  letter-spacing: 3.2px;
+  letter-spacing: 3.4px;
 }
 
 input:disabled + label {
@@ -1521,7 +1550,7 @@ b {
 }
 
 .column-right h2 {
-  margin-right: 56px;
+  margin-right: 53px;
 }
 
 .items-sorting-left {
