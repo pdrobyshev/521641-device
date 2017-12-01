@@ -210,7 +210,6 @@ a {
   width: 500px;
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: space-between;*/
   margin: 0;
   padding: 0;
 }
@@ -287,8 +286,7 @@ a {
   letter-spacing: 0;
 }
 
-.user-navigation-item:last-child a,
-.inner-page .user-navigation-item:nth-child(4) a {
+.user-navigation-item:last-child a {
   letter-spacing: -0.2px;
 }
 
@@ -324,7 +322,6 @@ a {
   width: 500px;
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: space-between;*/
 }
 
 .site-navigation li:first-child {
@@ -557,6 +554,10 @@ a {
   color: #000;
 }
 
+.slider-item:nth-child(2) p {
+  width: 450px;
+}
+
 .slider-item:nth-child(3) p {
   width: 460px;
 }
@@ -772,6 +773,8 @@ td {
   display: flex;
   flex-direction: column;
   width: 280px;
+  margin-top: -2px;
+
   color: #000;
 }
 
@@ -811,7 +814,7 @@ td {
 }
 
 .features-slider-list .button:first-of-type {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .features-slider-list .button:nth-of-type(2) {
@@ -1565,8 +1568,6 @@ fieldset:nth-child(3) {
   margin-right: 65px;
 }
 
-/*Фильтр - цвет с чекбоксами начало*/
-
 fieldset input {
   display: none;
 }
@@ -1636,8 +1637,6 @@ input:disabled + label::after,
 input:disabled + label:active::after {
   opacity: 0.25;
 }
-
-/*Фильтр - цвет с чекбоксами конец*/
 
 .inner-page .filters-form-button {
   width: 200px;
