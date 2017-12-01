@@ -862,7 +862,7 @@ td {
   width: 460px;
 }
 
-.features-slider-item:nth-of-type(3) p {
+.features-slider-item:nth-child(7) p {
   width: 430px;
 }
 
