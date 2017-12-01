@@ -183,7 +183,7 @@ img {
   outline: none;
   opacity: 1;
   width: 440px;
-  padding-bottom: 13px;
+  padding-bottom: 9px;
   border-bottom: 2px solid black;
 }
 
@@ -876,8 +876,14 @@ td {
   right: 70px;
 }
 
-.features-slider-item:not(:nth-of-type(1)) {
+.features-slider-item {
   display: none;
+}
+
+#feature1:checked ~ .features-slider-item:nth-child(5),
+#feature2:checked ~ .features-slider-item:nth-child(6),
+#feature3:checked ~ .features-slider-item:nth-child(7) {
+  display: block;
 }
 
 .logotypes-list {
