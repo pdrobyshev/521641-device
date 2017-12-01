@@ -71,21 +71,33 @@
                 <section class="filters">
                   <h2 class="sort-and-filter-heading">Фильтр:</h2>
                   <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
-                    <fieldset>
+                    <fieldset class="filter-item">
                       <legend>Стоимость</legend>
-                      <input type="range" name="price">
+                      <div class="range-filter">
+                        <div class="range-controls">
+                          <div class="scale">
+                            <div class="bar"></div>
+                          </div>
+                          <div class="toggle toggle-min"></div>
+                          <div class="toggle toggle-max"></div>
+                        </div>
+                        <div class="price-controls">
+                          <span class="min-price">от 0</span>
+                          <span class="max-price">до 5000</span>
+                        </div>
+                      </div>
                     </fieldset>
                     <fieldset>
                       <legend>Цвет</legend>
                       <input type="checkbox" name="black" id="black" checked>
                       <label for="black" tabindex="0">Черный</label>
-                      <input type="checkbox" name="white" id="white">
+                      <input class="filter-input" type="checkbox" name="white" id="white">
                       <label for="white" tabindex="0">Белый</label>
                       <input type="checkbox" name="blue" id="blue" checked>
                       <label for="blue" tabindex="0">Синий</label>
                       <input type="checkbox" name="red" id="red" checked>
                       <label for="red" tabindex="0">Красный</label>
-                      <input type="checkbox" name="pink" id="pink">
+                      <input class="filter-input" type="checkbox" name="pink" id="pink">
                       <label for="pink" tabindex="0">Розовый</label>
                     </fieldset>
                     <fieldset>
