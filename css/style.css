@@ -210,7 +210,7 @@ a {
   width: 500px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   margin: 0;
   padding: 0;
 }
@@ -221,11 +221,7 @@ a {
 
 .user-navigation li:nth-child(2) {
   margin-left: auto;
-  margin-right: 58px;
-}
-
-.inner-page .user-navigation li:last-child {
-  margin-left: 5px;
+  margin-right: 61px;
 }
 
 .user-navigation-item:first-child a::before {
@@ -273,15 +269,27 @@ a {
   background-position: center;
 }
 
-/*Как быть со вложенностью 2х уровней, при правках внутренней страницы?*/
-/*Задавать отдельный класс на лишку?*/
-.inner-page .user-navigation li:nth-child(2) {
-  margin-left: 0;
+.inner-page .user-navigation-item:first-child {
+  margin-left: 26px;
+}
+
+.inner-page .user-navigation-item:nth-child(2) {
+  margin-left: 17px;
+  margin-right: 82px;
   opacity: 0.3;
 }
 
-.inner-page .user-navigation li:nth-child(3) {
-  margin-right: 33px;
+.inner-page .user-navigation-item:nth-child(4) {
+  margin-left: auto;
+}
+
+.inner-page .user-navigation-item:nth-child(1) a {
+  letter-spacing: 0;
+}
+
+.user-navigation-item:last-child a,
+.inner-page .user-navigation-item:nth-child(4) a {
+  letter-spacing: -0.2px;
 }
 
 .site-navigation-wrapper {
@@ -1429,7 +1437,10 @@ form button:active,
 
 .bg-color-container {
   background-image:
-                    linear-gradient();
+                    linear-gradient(to right, #dbdbdb 0, #dbdbdb 700px, #ebebeb 700px, #ebebeb 100%),
+                    linear-gradient(to right, #ebebeb 0, #ebebeb 700px, #ffffff 700px, #ffffff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 70px, 100% 100%;
 }
 
 .wrapper {
@@ -1443,7 +1454,6 @@ form button:active,
   flex-direction: column;
   width: 270px;
   margin-left: 60px;
-  /*background-color: #ebebeb;*/
 }
 
 .column-right {
@@ -1499,7 +1509,6 @@ b {
   align-items: center;
   width: 760px;
   min-height: 70px;
-  background-color: #ebebeb;
 }
 
 .items-sorting-left,
@@ -1516,7 +1525,7 @@ b {
 }
 
 .items-sorting-left {
-  padding-bottom: 2px;
+  padding-bottom: 4px;
 }
 
 .items-sorting-left li:first-of-type {
