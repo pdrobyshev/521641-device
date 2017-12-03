@@ -1773,17 +1773,20 @@ b {
   opacity: 1;
 }
 
-
 .catalog {
   display: flex;
   flex-wrap: wrap;
   width: 760px;
-  justify-content: space-between;
   margin-top: -1px;
 }
 
 .catalog-item {
   position: relative;
+  margin-right: 40px;
+}
+
+.catalog-item:nth-child(2n+1) {
+  margin-right: 0;
 }
 
 .catalog-item img {
