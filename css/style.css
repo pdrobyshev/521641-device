@@ -1442,8 +1442,8 @@ form button:active,
 
 .bg-color-container {
   background-image:
-                    linear-gradient(to right, #dbdbdb 0, #dbdbdb 700px, #ebebeb 700px, #ebebeb 100%),
-                    linear-gradient(to right, #eeeeee 0, #eeeeee 700px, #ffffff 700px, #ffffff 100%);
+                    linear-gradient(to right, #dbdbdb 0, #dbdbdb 50%, #ebebeb 50%, #ebebeb 100%),
+                    linear-gradient(to right, #eeeeee 0, #eeeeee 50%, #ffffff 50%, #ffffff 100%);
   background-repeat: no-repeat;
   background-size: 100% 70px, 100% 100%;
 }
@@ -1452,6 +1452,12 @@ form button:active,
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  background-image:
+    linear-gradient(to right, #dbdbdb 0, #dbdbdb 328px, #ebebeb 328px, #ebebeb 100%),
+    linear-gradient(to right, #eeeeee 0, #eeeeee 328px, #ffffff 328px, #ffffff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 70px, 100% 100%;
 }
 
 .column-left {
@@ -1644,7 +1650,8 @@ input:disabled + label:active::after {
 
 .inner-page .filters-form-button {
   width: 200px;
-  background-color: #ebebeb;
+  background-color: transparent;
+  /*background-color: #ebebeb;*/
   z-index: 0;
 }
 
