@@ -1487,16 +1487,29 @@ fieldset {
   border: none;
 }
 
-fieldset::before {
+fieldset legend::before {
   content: '';
 
   position: absolute;
-  left: -1px;
-  top: -9px;
 
   width: 201px;
   height: 2px;
   background-color: #000000;
+}
+
+fieldset:nth-child(1) legend::before {
+  bottom: 147px;
+  left: -1px;
+}
+
+fieldset:nth-child(2) legend::before {
+  bottom: 292px;
+  left: -1px;
+}
+
+fieldset:nth-child(3) legend::before {
+  bottom: 168px;
+  left: -1px;
 }
 
 fieldset:first-child {
