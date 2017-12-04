@@ -441,6 +441,7 @@ a {
   position: relative;
 
   display: inline-block;
+  vertical-align: top;
   width: 10px;
   height: 10px;
   margin-right: 21px;
@@ -1048,6 +1049,7 @@ form button,
 .button {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   width: 260px;
   padding: 5px 0;
   border: 0;
@@ -1498,7 +1500,7 @@ fieldset::before {
 }
 
 fieldset:first-child {
-  padding-bottom: 34px;
+  padding-bottom: 35px;
 }
 
 fieldset:nth-child(2) {
@@ -1566,6 +1568,7 @@ fieldset:nth-child(3) {
 
 .price-controls span {
   display: inline-block;
+  vertical-align: top;
   margin-left: -1px;
 
   font-size: 14px;
