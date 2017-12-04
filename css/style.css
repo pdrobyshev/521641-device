@@ -1589,6 +1589,7 @@ fieldset:nth-child(3) legend {
 }
 
 fieldset label {
+  display: flex;
   position: relative;
   margin-left: 38px;
 
