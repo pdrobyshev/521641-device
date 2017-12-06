@@ -147,6 +147,7 @@ img {
 
 .search-form .search-field {
   line-height: 36px;
+  height: 35px;
   margin: 0;
   padding: 0;
   padding-left: 39px;
