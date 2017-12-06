@@ -102,7 +102,7 @@ img {
 
 .inner-page .main-navigation {
   padding-bottom: 38px;
-  margin-bottom: 46px;
+  margin-bottom: 38px;
 }
 
 .header-logo {
@@ -134,10 +134,11 @@ img {
 }
 
 .search-form input {
+  line-height: 36px;
   margin: 0;
   padding: 0;
   padding-left: 39px;
-  padding-bottom: 7px;
+  padding-bottom: 1px;
   border: none;
   background-color: transparent;
   opacity: 0.3;
@@ -212,7 +213,7 @@ a {
   align-items: center;
   margin-bottom: 17px;
   padding: 16px 0;
-  padding-top: 17px;
+  padding-top: 16px;
 }
 
 .user-navigation {
@@ -285,7 +286,7 @@ a {
 }
 
 .inner-page .user-navigation-item:nth-child(2) {
-  margin-left: 32px;
+  margin-left: 17px;
   margin-right: 82px;
   opacity: 0.3;
 }
@@ -610,7 +611,7 @@ a {
 .button.slider-button {
   width: 220px;
   margin-left: 2px;
-  margin-bottom: 58px;
+  margin-bottom: 55px;
 }
 
 .slider-table {
@@ -631,7 +632,7 @@ a {
 
 .slider-table-row:first-child {
   margin-left: -1px;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 }
 
 .slider-table-row th:first-child {
@@ -654,6 +655,7 @@ th {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: normal;
   font-size: 36px;
+  line-height: 36px;
   letter-spacing: 0.36px;
   color: #000;
 }
@@ -808,6 +810,11 @@ td {
   background-image: -webkit-linear-gradient(top, #ffffff, #ffffff 18px, #e5e5e5 18px);
   background-image: -o-linear-gradient(top, #ffffff, #ffffff 18px, #e5e5e5 18px);
   background-image: linear-gradient(to bottom, #ffffff, #ffffff 18px, #e5e5e5 18px);
+}
+
+.features-slider-wrapper .container {
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff 18px, #e5e5e5 18px);
+  height: 100%;
 }
 
 .features-slider {
@@ -1172,8 +1179,6 @@ form button:active,
 }
 
 .main-footer {
-  padding-top: 60px;
-
   background-color: #464646;
   background-image: url("../img/pattern-dark.jpg");
   background-position: 0 0;
@@ -1182,6 +1187,10 @@ form button:active,
 
 .main-footer .container {
   position: relative;
+  padding-top: 60px;
+
+  background-color: #464646;
+  background-image: url("../img/pattern-dark.jpg");
 }
 
 .main-footer .container::after {
@@ -1471,12 +1480,13 @@ form button:active,
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 47px;
+  line-height: 47px;
   letter-spacing: 0.47px;
   color: #000;
   margin: 0;
   padding: 0;
   margin-left: 60px;
-  margin-bottom: 27px;
+  margin-bottom: 18px;
 }
 
 .breadcrumbs {
@@ -1984,6 +1994,11 @@ b {
   margin-right: 0;
 }
 
+.catalog-item:nth-of-type(4) a {
+  line-height: 20px;
+  margin-top: 7px;
+}
+
 .catalog-item img {
   margin-top: 70px;
   margin-bottom: 35px;
@@ -2032,7 +2047,7 @@ b {
   display: block;
 }
 
-.catalog-item h1 {
+.catalog-item .catalog-item-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2071,7 +2086,7 @@ b {
   background-position: center;
 }
 
-h1 > a {
+.catalog-item-title > a {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -2079,12 +2094,12 @@ h1 > a {
   line-height: 30px;
 }
 
-.catalog-item-name {
+.catalog-item-title .catalog-item-name {
   width: 230px;
   line-height: 26px;
 }
 
-h1 > span {
+.catalog-item-title > span {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -2098,8 +2113,8 @@ h1 > span {
   flex-wrap: wrap;
   width: 760px;
   margin: 0;
-  margin-top: 51px;
-  margin-bottom: 77px;
+  margin-top: 65px;
+  margin-bottom: 76px;
   padding: 0;
   list-style: none;
   background-color: #ebebeb;
