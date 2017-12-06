@@ -701,9 +701,13 @@ td {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 167px;
+  margin-bottom: 127px;
   padding: 0;
   list-style: none;
+}
+
+.popular-item {
+  margin-bottom: 40px;
 }
 
 .popular-list li {
@@ -746,16 +750,17 @@ td {
   left: 13px;
 }
 
-.popular-list li::before {
+.popular-list a::before {
   content: "";
   display: block;
   width: 160px;
   height: 160px;
+  margin-bottom: 35px;
 
   background-color: #f7e296;
 }
 
-.popular-list li:not(:nth-child(6n))::before {
+.popular-list li:not(:nth-child(6n)) {
   margin-right: 40px;
 }
 
@@ -763,17 +768,12 @@ td {
   display: block;
   width: 160px;
   text-align: left;
-  margin-top: 35px;
   letter-spacing: 0.18px;
   line-height: 21px;
 }
 
-.popular-item:first-of-type a {
-  letter-spacing: 0.45px;
-  width: 140px;
-}
-
-.popular-item:nth-of-type(2) a {
+.popular-item-name {
+  display: inline-block;
   width: 125px;
 }
 
@@ -782,15 +782,15 @@ td {
   display: block;
 }
 
-.popular-list li:hover::before {
+.popular-list a:hover::before {
   background-color: #f0c52e;
 }
 
-.popular-item:active a {
+.popular-item a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.popular-item:active .svg {
+.popular-item-link:active .svg {
   fill-opacity: 0.3;
 }
 
@@ -1179,6 +1179,7 @@ form button:active,
 }
 
 .main-footer {
+  /*min-width: 1200px;*/
   background-color: #464646;
   background-image: url("../img/pattern-dark.jpg");
   background-position: 0 0;
