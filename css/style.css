@@ -823,7 +823,6 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 233px;
 }
 
 .features-slider input {
@@ -1343,9 +1342,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  flex-wrap: wrap;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -1353,18 +1350,21 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 470px;
+  margin-left: 5px;
 }
 
 .footer-site-navigation li {
   letter-spacing: 3.6px;
+  margin-right: 32px;
 }
 
 .footer-site-navigation li:first-child {
-  padding-right: 34px;
+  margin-right: 34px;
 }
 
 .footer-site-navigation li:nth-child(2) {
-  padding-right: 32px;
+  margin-right: 32px;
 }
 
 .footer-site-navigation li:last-child {
