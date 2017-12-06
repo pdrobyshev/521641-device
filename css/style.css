@@ -604,7 +604,7 @@ a {
   font-weight: normal;
   font-size: 15px;
   line-height: 30px;
-  color: #000;
+  color: #464646;
 }
 
 .slider-item:nth-child(2) p {
@@ -672,7 +672,7 @@ a {
   font-weight: normal;
   font-size: 13px;
   line-height: 20px;
-  color: #000;
+  color: #464646;
 }
 
 .product-slider-number {
@@ -1093,7 +1093,7 @@ a {
   font-size: 15px;
   line-height: 30px;
   letter-spacing: -0.6px;
-  color: #000;
+  color: #464646;
 }
 
 .info p:first-of-type {
