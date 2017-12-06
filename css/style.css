@@ -187,7 +187,7 @@ img {
   outline: none;
   opacity: 1;
   width: 440px;
-  padding-bottom: 9px;
+  padding-bottom: 0;
   border-bottom: 2px solid black;
 }
 
