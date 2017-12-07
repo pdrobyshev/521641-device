@@ -837,6 +837,7 @@ a {
 
 .features-slider-wrapper .container {
   background-image: linear-gradient(to bottom, #ffffff, #ffffff 18px, #e5e5e5 18px);
+  min-height: 306px;
 }
 
 .features-slider {
