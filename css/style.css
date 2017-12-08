@@ -1100,6 +1100,7 @@ a {
 
 .contacts img {
   cursor: pointer;
+  margin-top: 9px;
 }
 
 .info p {
@@ -1111,12 +1112,15 @@ a {
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
-  letter-spacing: -0.6px;
   color: #464646;
 }
 
 .info p:first-of-type {
   padding-bottom: 30px;
+}
+
+.about-us p {
+  width: 472px;
 }
 
 .about-us p:last-of-type {
@@ -1935,6 +1939,10 @@ a {
   align-items: center;
   width: 760px;
   min-height: 70px;
+}
+
+.items-sorting + div {
+  max-width: 150px;
 }
 
 .items-sorting-left,
