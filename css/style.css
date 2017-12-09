@@ -1624,19 +1624,18 @@ a {
   flex-direction: row;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
 
   background-image:
-    -webkit-linear-gradient(left, #dbdbdb 0, #dbdbdb 328px, #ebebeb 328px, #ebebeb 100%),
-    -webkit-linear-gradient(left, #eeeeee 0, #eeeeee 328px, #ffffff 328px, #ffffff 100%);
+    -webkit-linear-gradient(left, #dbdbdb 0, #dbdbdb 330px, #ebebeb 330px, #ebebeb 100%),
+    -webkit-linear-gradient(left, #eeeeee 0, #eeeeee 330px, #ffffff 330px, #ffffff 100%);
 
   background-image:
-    -o-linear-gradient(left, #dbdbdb 0, #dbdbdb 328px, #ebebeb 328px, #ebebeb 100%),
-    -o-linear-gradient(left, #eeeeee 0, #eeeeee 328px, #ffffff 328px, #ffffff 100%);
+    -o-linear-gradient(left, #dbdbdb 0, #dbdbdb 330px, #ebebeb 330px, #ebebeb 100%),
+    -o-linear-gradient(left, #eeeeee 0, #eeeeee 330px, #ffffff 330px, #ffffff 100%);
 
   background-image:
-    linear-gradient(to right, #dbdbdb 0, #dbdbdb 328px, #ebebeb 328px, #ebebeb 100%),
-    linear-gradient(to right, #eeeeee 0, #eeeeee 328px, #ffffff 328px, #ffffff 100%);
+    linear-gradient(to right, #dbdbdb 0, #dbdbdb 330px, #ebebeb 330px, #ebebeb 100%),
+    linear-gradient(to right, #eeeeee 0, #eeeeee 330px, #ffffff 330px, #ffffff 100%);
   background-repeat: no-repeat;
   background-size: 100% 70px, 100% 100%;
 }
@@ -1939,6 +1938,15 @@ a {
   align-items: center;
   width: 760px;
   min-height: 70px;
+
+  padding-left: 70px;
+  background-color: #ebebeb;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #ebebeb), to(#ebebeb));
+  background-image: -webkit-linear-gradient(left, #ebebeb 0, #ebebeb 100%);
+  background-image: -o-linear-gradient(left, #ebebeb 0, #ebebeb 100%);
+  background-image: linear-gradient(to right, #ebebeb 0, #ebebeb 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .items-sorting + div {
@@ -2035,6 +2043,8 @@ a {
   flex-wrap: wrap;
   width: 760px;
   margin-top: -1px;
+
+  margin-left: 70px;
 }
 
 .catalog-item {
@@ -2175,6 +2185,8 @@ a {
   padding: 0;
   list-style: none;
   background-color: #ebebeb;
+
+  margin-left: 70px;
 }
 
 .pagination-list li {
